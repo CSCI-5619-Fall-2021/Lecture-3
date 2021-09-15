@@ -1,6 +1,6 @@
 # Lecture 3: VR Development in Unity
 
-Detailed explanation of this code can be found in the lecture video (will be added after class).
+Detailed explanation of this code can be found in the [lecture video](https://mediaspace.umn.edu/media/t/1_gpale6sr).
 
 ## Topics
 
@@ -13,6 +13,11 @@ Detailed explanation of this code can be found in the lecture video (will be add
 7. Using Oculus Link with the Unity editor
 8. Adding objects to the scene
 9. Adding a C# script to an object
+
+## Notes
+
+1. The Android build error I encountered during class was the result of an update that did not get installed correctly on my laptop.  This is unrelated to GitHub.
+2. Because of this error, there was one step we were not able to show in the video.  In the default scene, the controllers may not be visible when you first open the application on the headset.  (They will actually appear under the floor.)  This is because the tracking origin is set incorrectly.  To fix this, click on the XRRig object in the sample scene.  In the object inspector, change "Requested Tracking Mode" from Default to Floor.  This will place the origin at the floor level reported by the headset guardian system, so the controllers and headset will show up at the correct height.
 
 ## Participation Exercise
 
